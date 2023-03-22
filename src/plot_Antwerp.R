@@ -4,7 +4,7 @@ library(reshape2)
 library(readr)
 
 # PLOT ANTWERP 
-
+dir.create('output')
 ## import the data from `gen/analysis/pivot_table`
 df_pivot <- read_csv("temp/pivot_table.csv")
 

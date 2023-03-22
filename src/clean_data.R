@@ -9,6 +9,7 @@ library(readr)
 
 reviews <- read_csv("data/reviews.csv")
 listings <- read_csv("data/listings.csv")
+dir.create('temp')
 
 ## filter for reviews published since 01/01/2015
 reviews_filtered <- reviews %>% filter(date > "2016-01-01")

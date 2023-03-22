@@ -4,7 +4,7 @@ library(reshape2)
 library(readr)
 
 # DOWNLOAD DATA 
-
+dir.create('data')
 ## Function to download data and save as CSV
 download_data <- function(url, filename){
   download.file(url = url, destfile = paste0(filename, ".csv"))
